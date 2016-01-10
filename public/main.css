@@ -1,0 +1,76 @@
+body {
+  font-family: Georgia, Tahoma, "Times New Roman", serif;
+  color: #444444;
+  margin: 0;
+}
+a {
+  color: #2e568f;
+}
+#fax {
+  width: 600px;
+  height: 600px;
+  background: url('fax.jpg') no-repeat;
+  background-size: contain;
+  margin: auto;
+  position: relative;
+  -moz-perspective: 400px;
+  -webkit-perspective: 400px;
+  perspective: 400px;
+
+}
+@keyframes answermate {
+  from {height: 0px}
+  to {height: 240px}
+}
+@-webkit-keyframes answermate {
+  from {height: 0px}
+  to {height: 240px}
+}
+@-moz-keyframes answermate {
+  from {height: 0px}
+  to {height: 240px}
+}
+#answer {
+  position: absolute;
+  background: -webkit-linear-gradient(#eeedf0, #e3e2e7);
+  background: -o-linear-linear-gradient(#eeedf0, #e3e2e7);
+  background: -mox-linear-gradient(#eeedf0, #e3e2e7);
+  background: linear-gradient(#eeedf0, #e3e2e7);
+  background: #eeedf0;
+  width: 265px;
+  height: 240px;
+  bottom: 270px;
+  left: 202px;
+  overflow: hidden;
+  -webkit-animation-name: answermate;
+  -webkit-animation-duration: 8s;
+  -moz-animation-name: answermate;
+  -moz-animation-duration: 8s;
+  animation-name: answermate;
+  animation-duration: 8s;
+  -moz-transform: rotateX(5deg);
+  -webkit-transform: rotateX(5deg);
+  transform: rotateX(5deg);
+}
+#answer span {
+  display: block;
+  padding: 15px;
+  font-size: 100px;
+  text-align: center;
+}
+article {
+  width: 500px;
+  margin: auto;
+}
+footer {
+  margin-top: 3rem;
+  font-size: 76%;
+  font-family: verdana, arial, sans-serif;
+  background: #444444;
+  color: #bbbbbb;
+  padding: 0.5rem;
+  text-align: center;
+}
+footer a {
+  color: #bbbbbb;
+}
